@@ -20,7 +20,7 @@ The homepage applies a scrolling index to move from one page to another.
 ## Applying
 
 - Fluid Typography.
-- SASS organization method using:variables, breakpoints
+- SASS organization method using: variables, breakpoints
 
 
 
