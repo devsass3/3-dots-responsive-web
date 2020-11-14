@@ -1,0 +1,68 @@
+
+.navbar {
+    min-height: 10vh;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.logo {
+    font-size: 15px;
+    font-weight: 200;
+    z-index: 2;
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}
+
+a:hover {
+    font-size: 17px;
+    font-weight: 400;
+    transition: 300ms ease-in-out;
+}
+
+.menu {
+    cursor: pointer;
+    z-index: 2;
+}
+
+.nav-open {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 50vh;
+    background: white;
+    color: black;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 5% 1fr 1fr 5%;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    transform: translateY(-100%);
+
+    .contact {
+        grid-column: 2/3;
+    }
+
+    h3 {
+        font-size: 28px;
+        padding-bottom: 40px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    .social-links {
+        img {
+            padding: 0px 20px;
+        }
+    }
+}

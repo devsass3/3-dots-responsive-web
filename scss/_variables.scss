@@ -1,0 +1,24 @@
+
+// Colors
+$strongGrey: #0c353e;
+$black: #000000;
+$brightPink: #db0083;
+$black: #060005;
+$lightCyan: #a9b9b8;
+$darkBlue:#111214;
+
+// Breakpoints
+$breakpoints: (
+    small: 399px,
+    medium: 699px,
+    large: 999px,
+    xlarge: 1399px,
+);
+
+@mixin breakpoint ($size) {
+    $breakpoint-value: map-get($breakpoints, $size);
+
+    @media screen and (min-width: $breakpoint-value){
+        @content;
+    }
+}

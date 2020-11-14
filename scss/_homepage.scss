@@ -1,0 +1,113 @@
+
+//Mobile first--> breakpoints 4 tablet & laptop
+
+.portofolio {
+    color: white;
+    background-image: radial-gradient($strongGrey, $black);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.page {
+    display: grid;
+    min-height: 80vh;
+    grid-template-columns: 5% 1fr 5%;
+    grid-template-rows: 2fr, 1fr;
+    align-items: center;
+
+    @include breakpoint(large){
+        grid-template-columns: 5% 1fr 1fr 1fr 5%;    
+    }
+}
+
+.details {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    align-self: end;
+    text-align: center;
+    padding-top: 2.5rem;
+    line-height: 2rem;
+
+    h1 {
+        font-size: 2.2rem;
+        font-weight: 500;
+    }
+
+    h2 {
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    p {
+        padding-top: 0.5rem;
+        font-size: 0.6rem;
+        font-weight: 200;
+    }
+
+    @include breakpoint(large) {
+        text-align: start;
+        padding: 0;
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 500;
+        }
+    }
+}
+
+.producer,.berlinCity {
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    pointer-events: none;
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+}
+
+.hero {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    grid-column: 2/3;
+    margin-top: 2rem;
+    height: 60vh;
+    overflow: hidden;
+
+    a {
+        display: flex;
+
+        img {
+            min-width: 35%;
+            max-height: 60vh;
+            transition: transform 0.2s ease-out;
+            cursor: pointer;
+        }
+    }
+
+    @include breakpoint(large) {
+        grid-column: 3/3;
+    } 
+}
+
+.model-left {
+    transform: translate(0%, -10%);
+}
+
+.hero:hover .model-left {
+    transform: translate(0%, 0%);
+}
+
+.model-right {
+    transform: translate(0%, 10%);
+}
+
+.hero:hover .model-right {
+    transform: translate(0%, 0%);
+}
