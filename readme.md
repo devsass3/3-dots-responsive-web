@@ -3,7 +3,7 @@
 
 Responsive profile Web with 4 pages and two model pages. 
 
-The homepage applies a scrolling index for move to one page to another.
+The homepage applies a scrolling index to move from one page to another.
 
 ## Usage
 
