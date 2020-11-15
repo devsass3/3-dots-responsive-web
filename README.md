@@ -4,6 +4,7 @@
 Responsive Website. The homepage applies a scrolling index to move from one page to another.
 
 <p>Here are some <b>IMAGES</b>:</p>
+
 See all IMAGES and the responsive layout at the folder: [/ImagesWebLayout](https://github.com/devsass3/3-dots-responsive-web/tree/master/ImagesWebLayout)
 
 <img src = "ImagesWebLayout/1slide homepage.png" width = 400>
