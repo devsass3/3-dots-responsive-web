@@ -5,6 +5,12 @@ Responsive profile Web with four pages and two model pages.
 
 The homepage applies a scrolling index to move from one page to another.
 
+<p>some <b>IMAGES</b>:</p>
+<img src = "ImagesWebLayout/1slide homepage.png" width = 400>
+
+
+
+
 ## Usage
 
 - SASS - CSS
